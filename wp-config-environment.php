@@ -98,8 +98,8 @@ if ( isset( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
 $config_defaults = [
 
 	// Multisite
-	'WP_ALLOW_MULTISITE'             => tribe_getenv( 'WP_ALLOW_MULTISITE', false ),
-	'MULTISITE'                      => tribe_getenv( 'WP_MULTISITE', false ),
+	'WP_ALLOW_MULTISITE'             => tribe_getenv( 'WP_ALLOW_MULTISITE', true ),
+	'MULTISITE'                      => tribe_getenv( 'WP_MULTISITE', true ),
 	'SUBDOMAIN_INSTALL'              => tribe_getenv( 'SUBDOMAIN_INSTALL', false ),
 	'DOMAIN_CURRENT_SITE'            => tribe_getenv( 'DOMAIN_CURRENT_SITE', '%%PRIMARY_DOMAIN%%' ),
 	'PATH_CURRENT_SITE'              => tribe_getenv( 'PATH_CURRENT_SITE', '/' ),

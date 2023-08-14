@@ -57,3 +57,4 @@ define( 'TRIBE_GLOMAR', false );
  * 'production'.
  */
 define( 'HIDE_ACF_MENU', false );
+define( 'DOMAIN_CURRENT_SITE', '[MULTISITE DEFAULT URL]' );
