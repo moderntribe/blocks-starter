@@ -7,8 +7,6 @@ config:
   via: nginx
   xdebug: true
   memcached: true
-  config:
-    vhosts: config/multisite.conf
 
 services:
   mailhog:
@@ -17,6 +15,7 @@ services:
     hogfrom:
       - appserver_nginx
       - appserver
+
 tooling:
   xdebug-on:
     service: appserver
