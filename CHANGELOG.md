@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). Each changelog entry gets prefixed with the category of the item (Added, Changed, Depreciated, Removed, Fixed, Security).
 
+## [2023.10]
+
+- Added: Terms block v1.0.0. Displays a set of terms for a given taxonomy. Is able to display those terms in a few different ways (links, pills).
+- Updated: WordPress Core update to 6.3.2
+- Updated: Disable Emojis to 1.7.6, Limit Login Attempts Reloaded to 2.25.25, RankMath to 1.0.203, ACF Pro to 6.2.1.1
+- Adds: Lighthouse GitHub Action for automatic track of SEO, Accessability, Performance, and Best Practices.
+
 ## [2023.08]
 
 - Added: GTM4WP Plugin for handling Google Tag Manager.
@@ -10,6 +17,7 @@ All notable changes to this project will be documented in this file. The format 
 - Updated: WordPress core to 6.3, ACF to 6.2, Gravity Forms to 2.7.12, Local Lando PHP version to 8.1, Yoast SEO to ^20.1.
 - Updated: Misc composer packages updated to match local PHP version
 - Added: Stacking order controls on the Column block. This allows editors to control what order columns appear in at mobile widths.
+- Updated: Swapped Yoast SEO plugin out in favor of [Rank Math SEO](https://wordpress.org/plugins/seo-by-rank-math/) plugin. Remove Redirection plugin as Rank Math supports the same feature. Updated primary term helper method to support both plugins' primary term meta value.
 
 ## [2023.06]
 
