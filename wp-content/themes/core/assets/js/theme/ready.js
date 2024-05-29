@@ -8,7 +8,6 @@ import { ready } from 'utils/events.js';
 import { debounce } from 'utils/tools.js';
 
 import resize from 'common/resize.js';
-import viewportDims from 'common/viewport-dims.js';
 
 /**
  * @function bindEvents
@@ -25,10 +24,6 @@ const bindEvents = () => {
  */
 
 const init = () => {
-	// set initial states
-
-	viewportDims();
-
 	// initialize global events
 
 	bindEvents();

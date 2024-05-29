@@ -5,19 +5,22 @@
  * and detects mobile or desktop state.
  */
 
-import state from '../config/state';
+import store from '../state/store.js';
 import { MOBILE_BREAKPOINT } from '../config/options';
 
 const viewportDims = () => {
-	state.v_height = window.innerHeight;
-	state.v_width = window.innerWidth;
+	const { getState, setState } = store;
 
-	if ( state.v_width >= MOBILE_BREAKPOINT ) {
-		state.is_desktop = true;
-		state.is_mobile = false;
+	const state = getState();
+	setState( {
+		viewportHeight: window.innerHeight,
+		viewportWidth: window.innerWidth,
+	} );
+
+	if ( state.viewportWidth >= MOBILE_BREAKPOINT ) {
+		setState( { isDesktop: true } );
 	} else {
-		state.is_desktop = false;
-		state.is_mobile = true;
+		setState( { isDesktop: false } );
 	}
 };
 
